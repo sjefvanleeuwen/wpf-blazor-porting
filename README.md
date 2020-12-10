@@ -8,6 +8,7 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 * Slightly alter the WPF code behind and XAML for proper databinding.
 
 *Note* We did not set a style-sheet for font and colors, font size in bootstrap is a bit bigger by default.
+With some alterations, auto overflow/fontsize it will become pixel perfect.
 
 #### Blazor
 ![blazor](./doc/img/blazor.png)
