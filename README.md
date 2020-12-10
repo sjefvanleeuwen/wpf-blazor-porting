@@ -10,6 +10,8 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 *Note* We did not set a style-sheet for font and colors, font size in bootstrap is a bit bigger by default.
 With some alterations, auto overflow/fontsize it will become pixel perfect.
 
+Application is ported from Anna Pavlenko: https://github.com/apavlen WPF-Calculator
+
 #### Blazor
 ![blazor](./doc/img/blazor.png)
 
