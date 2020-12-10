@@ -10,7 +10,7 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 *Note* We did not set a style-sheet for font and colors, font size in bootstrap is a bit bigger by default.
 With some alterations, auto overflow/fontsize it will become pixel perfect.
 
-Also notice the EventCallback differences, as well as Add.Item AddItem, Blazor needs more binding lambda's to bind to complex objects. This could also be achieved by Cascading Parameters. Or, more preferent, a good State and Mediator pattern that supports **vertical slicing** for **micro front ends.**
+Also notice the EventCallback differences, as well as Add.Item AddItem, Blazor needs more binding lambda's to bind to complex objects. This could also be achieved by Cascading Parameters. Or, more preferable, a good State and Mediator pattern that supports **vertical slicing** for **micro front ends.**
 Such as **Blazor-State** from my friends at Timewarp Engineering. https://timewarpengineering.github.io/blazor-state/
 
 ![blazor](./doc/img/vertical-slicing.jpg)
