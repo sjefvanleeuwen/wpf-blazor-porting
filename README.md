@@ -18,7 +18,7 @@ Application is ported from Anna Pavlenko: https://github.com/apavlen WPF-Calcula
 #### WPF
 ![wpf](./doc/img/wpf.png)
 
-## Diff between XAMLS
+## Diff between XAML/Razor
 
 ```diff
  <Grid Height="230" HorizontalAlignment="Left" Margin="0,31,0,0" Name="grid2" VerticalAlignment="Top" Width="328">
