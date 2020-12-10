@@ -48,10 +48,10 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
          string numberOneBuffer;
          string numberTwoBuffer;
          Calc c;
--        public MainWindow()
 +        IText textBox1 { get; set; }
 +        IItems listBox1 { get; set; }
-+
+
+-        public MainWindow()
 +        protected override void OnAfterRender(bool firstRender)
          {
 -            InitializeComponent();
@@ -61,11 +61,8 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 +            {
 +                textBox1.Text = defaultString;
 +                c = new Calc();
- 
--            numberOneBuffer = "";
--            numberTwoBuffer = "";
-+                numberOneBuffer = "";
-+                numberTwoBuffer = "";
+                 numberOneBuffer = "";
+                 numberTwoBuffer = "";
 +            }
          }
  
