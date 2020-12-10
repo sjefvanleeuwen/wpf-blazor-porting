@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.64
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Wpf.Components", "Blazor.Wpf.Components\Blazor.Wpf.Components.csproj", "{0E5D0F90-02FA-4A2D-A659-2FF82DD5130D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Wfp.Calculator", "Blazor.Wfp.Calculator\Blazor.Wfp.Calculator.csproj", "{2C3D68DF-3D2D-4BA4-9C66-94F6DF33BCC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E5D0F90-02FA-4A2D-A659-2FF82DD5130D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5D0F90-02FA-4A2D-A659-2FF82DD5130D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5D0F90-02FA-4A2D-A659-2FF82DD5130D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5D0F90-02FA-4A2D-A659-2FF82DD5130D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3D68DF-3D2D-4BA4-9C66-94F6DF33BCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3D68DF-3D2D-4BA4-9C66-94F6DF33BCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3D68DF-3D2D-4BA4-9C66-94F6DF33BCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3D68DF-3D2D-4BA4-9C66-94F6DF33BCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9613193-88B2-426C-A9D5-E9E785428E83}
+	EndGlobalSection
+EndGlobal
