@@ -2,7 +2,7 @@
 
 ## What did I do?
 
-Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonstrator we:
+I Built a small demonstrator showing porting WPF to Blazor (Web Assembly) using a user interaction pattern supported by some business logic. In this demonstrator we:
 
 * Ported a simple calculator
 * Mimick the WPF XAML grid system, button, textbox and textlist as a Razor Components
