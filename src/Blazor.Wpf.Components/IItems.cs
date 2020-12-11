@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Blazor.Wpf.Components
+﻿namespace Blazor.Wpf.Components
 {
     public interface IItems
     {

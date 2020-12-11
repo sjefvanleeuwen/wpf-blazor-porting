@@ -1,20 +1,8 @@
-﻿@*Content="1" Height="40" HorizontalAlignment="Left" Name="one" VerticalAlignment="Top" Width="40" Click="one_Click" Margin="7,6,0,0"*@
-<Blazorise.Button Color="Color.Light" Style="@Style" @onclick="Click">@Content</Blazorise.Button>
+﻿<Blazorise.Button Color="Color.Light" Style="@Style" @onclick="Click">@Content</Blazorise.Button>
+@inherits WpfStyleBase 
 @code {
     [Parameter]
     public string Content { get; set; }
-    [Parameter]
-    public int Height { get; set; }
-    [Parameter]
-    public string HorizontalAlignment { get; set; }
-    [Parameter]
-    public string Name { get; set; }
-    [Parameter]
-    public string VerticalAlignment { get; set; }
-    [Parameter]
-    public int Width { get; set; }
-    [Parameter]
-    public string Margin { get; set; }
 
     [Parameter]
     public EventCallback<MouseEventArgs> Click { get; set; }
