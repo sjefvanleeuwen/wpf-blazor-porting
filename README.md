@@ -1,5 +1,7 @@
 # wpf-blazor-porting
 
+## What did I do?
+
 Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonstrator we:
 
 * Ported a simple calculator
