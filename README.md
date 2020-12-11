@@ -19,7 +19,7 @@ able to run on some devices but not all. Microsoft Silverlight will reach the en
 Thirdly, Web Assembly enables legacy applications to offer a good roadmap in transitioning. A lot of logic can be reused transparently both on client and server. This enables us to  offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
 the cloud or your data center.
 
-The proof of concept exercition herein took about half a day to realize. If you understand WPF, the learning curve to Blazor Utilizing Web Assmebly is a welcoming one (I Speak
+The proof of concept exercition herein took about half a day to realize. If you understand WPF, the learning curve to Blazor Utilizing Web Assembly is a welcoming one (I Speak
 from experience). 
 
 ## Side Notes
