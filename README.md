@@ -11,11 +11,16 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 
 ## Why did I do it?
 
-A lot of great legacy software was built in Silverlight and WPF. Although these are great frameworks, they don't adhere to standards such as (Isolated) CSS, HTML and Web Assembly. The Latter paves the way to running User Interface Native on any device in any programming language (though we focus on C# here).
+Firstly, a lot of great legacy software was built in Silverlight and WPF. Although these are great frameworks, they don't adhere to standards such as (Isolated) CSS, HTML and Web Assembly. The Latter paves the way to running User Interface Native on any device in any programming language (though we focus on C# here).
 
-Also these legacy applications greatly benefit from said capbilities. A lot of logic can be reused transparently both on client and server. This enables us to 
-offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
-the cloud or your data center.
+Secondly, serving WPF is very costly to the consumer, as these need to be delivered through (Virtualized) Windows Desktops and can not run in the browser. Silverlight was
+able to run on some devices but not all. Microsoft Silverlight will reach the end of support on October 12, 2021. Silverlight development framework is currently only supported on Internet Explorer 10 and Internet Explorer 11, with support for Internet Explorer 10 ending on January 31, 2020.
+
+Thirdly, Web Assembly enables legacy applications to offer a good roadmap in transitioning. A lot of logic can be reused transparently both on client and server. This enables us to  offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
+the cloud or your data center. 
+
+The proof of concept exercition herein took about half a day to realize. If you understand WPF, the learning curve to Blazor Utilizing Web Assmebly is a welcoming one (I Speak
+from experience).
 
 ## Side Notes
 
