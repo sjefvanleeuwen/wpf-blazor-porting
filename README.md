@@ -7,16 +7,31 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 * Translate these to wrap to Blazorize
 * Slightly alter the WPF code behind and XAML for proper databinding.
 
+## Side Notes
+
+### Styling
+
 *Note* We did not set a style-sheet for font and colors, font size in bootstrap is a bit bigger by default.
 With some alterations, auto overflow/fontsize it will become pixel perfect.
 
-Also notice the EventCallback differences, as well as Add.Item AddItem, Blazor needs more binding lambda's to bind to complex objects. This could also be achieved by Cascading Parameters. Or, more preferent, a good State and Mediator pattern that supports **vertical slicing** for **micro front ends.**
+### State management, vertical slicing & micro front ends.
+
+Also notice the EventCallback differences, as well as Add.Item AddItem, Blazor needs more binding lambda's to bind to complex objects. This could also be achieved by Cascading Parameters. Or, more preferable, a good State and Mediator pattern that supports **vertical slicing** for **micro front ends.**
 Such as **Blazor-State** from my friends at Timewarp Engineering. https://timewarpengineering.github.io/blazor-state/
 
 ![blazor](./doc/img/vertical-slicing.jpg)
 
+### Front end, Code behind and Business Logic reuse
+
+Front end and Code Behind reuse reaches well **over 90% reuse** differences are included in diffing reports.
+
+Business Logic reuse (in this case Calc class instances) were **100% compatible** and therefore **not** included in diffing report.
+
+### The original WPF application
+
 Application is ported from Anna Pavlenko: https://github.com/apavlen WPF-Calculator
 
+### Differences (standard Blazorise styling)
 
 #### Blazor
 ![blazor](./doc/img/blazor.png)
@@ -127,7 +142,7 @@ Time for some Diffs.
  </Grid>
 ```
 
-## Diff between Code Behind
+### Diff between Code Behind
 
 ```diff
          static string defaultString = "0.0";
