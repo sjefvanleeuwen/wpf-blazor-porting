@@ -17,12 +17,14 @@ Secondly, serving WPF is very costly to the consumer, as these need to be delive
 able to run on some devices but not all. Microsoft Silverlight will reach the end of support on October 12, 2021. Silverlight development framework is currently only supported on Internet Explorer 10 and Internet Explorer 11, with support for Internet Explorer 10 ending on January 31, 2020.
 
 Thirdly, Web Assembly enables legacy applications to offer a good roadmap in transitioning. A lot of logic can be reused transparently both on client and server. This enables us to  offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
-the cloud or your data center. 
+the cloud or your data center.
 
 The proof of concept exercition herein took about half a day to realize. If you understand WPF, the learning curve to Blazor Utilizing Web Assmebly is a welcoming one (I Speak
-from experience).
+from experience). 
 
 ## Side Notes
+
+Using Web Assmebly technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps.
 
 ### Styling
 
