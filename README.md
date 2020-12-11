@@ -23,8 +23,9 @@ Such as **Blazor-State** from my friends at Timewarp Engineering. https://timewa
 
 ### Front end, Code behind and Business Logic reuse
 
-Front end and Code Behind reuse reaches well **over 90% reuse** differences are included in diffing reports
-Business Logic reuse (in this case instance the Calc class instances) were **100% compatible** and therefore not included in diffing report.
+Front end and Code Behind reuse reaches well **over 90% reuse** differences are included in diffing reports.
+
+Business Logic reuse (in this case Calc class instances) were **100% compatible** and therefore **not** included in diffing report.
 
 ### The original WPF application
 
