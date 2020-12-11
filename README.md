@@ -24,7 +24,8 @@ from experience).
 
 ## Side Notes
 
-Using Web Assmebly technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps.
+Using Web Assmeely technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps.Ultimately such runtimes are very
+capable being part of the IOT cloud and can easily integrate with decentralized computing models.
 
 ### Styling
 
