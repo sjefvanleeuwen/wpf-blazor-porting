@@ -24,8 +24,8 @@ from experience).
 
 ## Side Notes
 
-Using Web Assembly technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps.Ultimately such runtime are very
-capable being part of the IOT cloud and can easily integrate with decentralized computing models.
+Using Web Assembly technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps. Ultimately Web Assmeblies are very
+capable being part of the IoT cloud and can easily integrate with decentralized computing models.
 
 ### Styling
 
