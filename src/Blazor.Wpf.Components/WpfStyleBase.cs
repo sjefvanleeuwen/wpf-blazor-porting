@@ -6,7 +6,6 @@ namespace Blazor.Wpf.Components
     {
         [Parameter]
         public RenderFragment ChildContent { get; set; }
-        // [Parameter]
 
         private string _text;
 
