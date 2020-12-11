@@ -24,6 +24,75 @@ Application is ported from Anna Pavlenko: https://github.com/apavlen WPF-Calcula
 #### WPF
 ![wpf](./doc/img/wpf.png)
 
+## Setting the stage with Isomorphic Design Patterns
+
+A lot of WPF components, actually all in this example, have a common ancestry in their attributes. 
+These are captured in a WpfStyleBase class so every component can reuse them as **isomorphic design patterns.**
+
+### The beginning of a Union abstract in translating WPF -> HTML styles
+
+Consider this base class:
+
+```CSharp
+    public abstract class WpfStyleBase : ComponentBase
+    {
+        [Parameter]
+        public RenderFragment ChildContent { get; set; }
+        [Parameter]
+        public int Height { get; set; }
+        [Parameter]
+        public string HorizontalAlignment { get; set; }
+        [Parameter]
+        public string Margin { get; set; }
+        [Parameter]
+        public string VerticalAlignment { get; set; }
+        [Parameter]
+        public int Width { get; set; }
+
+        public string Style
+        {
+            get
+            {
+                // WPF Margin is in left,top,right,bottom
+                // CSS Margin is in  top, right, bottom, left
+                var o = Margin.Split(',');
+                return $"position:absolute; margin: {o[1]}px {o[2]}px {o[3]}px {o[0]}px; width: {Width}px; height: {Height}px; vertical-align: {VerticalAlignment}; text-align: {HorizontalAlignment};";
+            }
+        }
+    }
+```
+
+*Note* The orientation of WPF v.s. HTML for margin's can be **translated within the abstraction**. The HTMl style is build up accordingly.
+
+### Minimalistic wrappers between XAML and Razor
+
+Because of said abstraction and the use of a good Blazor Framework, such as blazorise, the razor components become **extremely** minimized.
+For example:
+
+#### Grid System
+```XML
+@inherits WpfStyleBase
+<div style="@Style">@ChildContent</div>
+```
+
+#### Text Box
+
+```XML
+@inherits WpfStyleBase
+<Blazorise.TextEdit Style="@Style" Text="@Text"></Blazorise.TextEdit>
+```
+
+#### Button
+```Button
+@inherits WpfStyleBase
+<Blazorise.Button Style="@Style" @onclick="Click">@Content</Blazorise.Button>
+```
+
+The properties of these controls are propagated as parameters and can be **effectively** described by the
+Razor Component models.
+
+Time for some Diffs.
+
 ## Diff between XAML/Razor
 
 ```diff
