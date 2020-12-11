@@ -16,21 +16,21 @@ Firstly, a lot of great legacy software was built in Silverlight and WPF. Althou
 Secondly, serving WPF is very costly to the consumer, as these need to be delivered through (Virtualized) Windows Desktops and can not run in the browser. Silverlight was
 able to run on some devices but not all. Microsoft Silverlight will reach the end of support on October 12, 2021. Silverlight development framework is currently only supported on Internet Explorer 10 and Internet Explorer 11, with support for Internet Explorer 10 ending on January 31, 2020.
 
-Thirdly, Web Assembly enables legacy applications to offer a good roadmap in transitioning. A lot of logic can be reused transparently both on client and server. This enables us to  offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
+Thirdly, Web Assembly enables legacy applications to offer a good road map in transitioning. A lot of logic can be reused transparently both on client and server. This enables us to  offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
 the cloud or your data center.
 
-The proof of concept exercition herein took about half a day to realize. If you understand WPF, the learning curve to Blazor Utilizing Web Assembly is a welcoming one (I Speak
+This proof of concept exercise herein took about half a day to realize. If you understand WPF, the learning curve to Blazor Utilizing Web Assembly is a welcoming one (I Speak
 from experience). 
 
 ## Side Notes
 
-Using Web Assmeely technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps.Ultimately such runtimes are very
+Using Web Assembly technology we can reduce licensing fee's in SAAS solutions to the consumer *both on bare metal servers/cloud infrastructure* as well as delivery to thin clients in comparison to WPF based applications. While remaining in the same programming paradigm, which is highly beneficial to DevOps.Ultimately such runtime are very
 capable being part of the IOT cloud and can easily integrate with decentralized computing models.
 
 ### Styling
 
 *Note* We did not set a style-sheet for font and colors, font size in bootstrap is a bit bigger by default.
-With some alterations, auto overflow/fontsize it will become pixel perfect.
+With some alterations, auto overflow/font size it will become pixel perfect.
 
 ### State management, vertical slicing & micro front ends.
 
