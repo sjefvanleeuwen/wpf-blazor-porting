@@ -9,6 +9,14 @@ Small demonstrator showing porting WPF to Blazor (Web Assembly). In this demonst
 * Translate these to wrap to Blazorize
 * Slightly alter the WPF code behind and XAML for proper databinding.
 
+## Why did I do it?
+
+A lot of great legacy software was built in Silverlight and WPF. Although these are great frameworks, they don't adhere to standards such as (Isolated) CSS, HTML and Web Assembly. The Latter paves the way to running User Interface Native on any device in any programming language (though we focus on C# here).
+
+Also these legacy applications greatly benefit from said capbilities. A lot of logic can be reused transparently both on client and server. This enables us to 
+offload server side logic to the client and make interactions more smoothly for the end-user while at the same time lowering the total cost of owner ship at bare metal in 
+the cloud or your data center.
+
 ## Side Notes
 
 ### Styling
@@ -41,12 +49,16 @@ Application is ported from Anna Pavlenko: https://github.com/apavlen WPF-Calcula
 #### WPF
 ![wpf](./doc/img/wpf.png)
 
-## Setting the stage with Isomorphic Design Patterns
+## How did I do it?
+
+Lets get to the nitty gritty :)
+
+### Setting the stage with Isomorphic Design Patterns
 
 A lot of WPF components, actually all in this example, have a common ancestry in their attributes. 
 These are captured in a WpfStyleBase class so every component can reuse them as **isomorphic design patterns.**
 
-### The beginning of a Union abstract in translating WPF -> HTML styles
+#### The beginning of a Union abstract in translating WPF -> HTML styles
 
 Consider this base class:
 
@@ -81,25 +93,25 @@ Consider this base class:
 
 *Note* The orientation of WPF v.s. HTML for margin's can be **translated within the abstraction**. The HTMl style is build up accordingly.
 
-### Minimalistic wrappers between XAML and Razor
+#### Minimalistic wrappers between XAML and Razor
 
 Because of said abstraction and the use of a good Blazor Framework, such as blazorise, the razor components become **extremely** minimized.
 For example:
 
-#### Grid System
+##### Grid System
 ```XML
 @inherits WpfStyleBase
 <div style="@Style">@ChildContent</div>
 ```
 
-#### Text Box
+##### Text Box
 
 ```XML
 @inherits WpfStyleBase
 <Blazorise.TextEdit Style="@Style" Text="@Text"></Blazorise.TextEdit>
 ```
 
-#### Button
+##### Button
 ```Button
 @inherits WpfStyleBase
 <Blazorise.Button Style="@Style" @onclick="Click">@Content</Blazorise.Button>
@@ -144,7 +156,7 @@ Time for some Diffs.
  </Grid>
 ```
 
-### Diff between Code Behind
+## Diff between Code Behind
 
 ```diff
          static string defaultString = "0.0";
